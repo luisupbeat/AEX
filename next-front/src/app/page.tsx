@@ -1,9 +1,10 @@
-import React from 'react'
-
-function HomePage() {
-  return (
-    <div>home Page</div>
-  )
+import { Metadata } from 'next'
+import Link from 'next/link'
+ 
+export const metadata: Metadata = {
+  title: 'Next.js',
 }
-
-export default HomePage
+ 
+export default function Page() {
+  return <Link href="/dashboard">Dashboard</Link>
+}
