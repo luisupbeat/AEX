@@ -18,10 +18,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
-      <Navbar></Navbar>
-        {/* Layout UI */}
-        layout principal
+      <body className="bg-cyan-950 text-white">
+        <Navbar></Navbar>
         <main>{children}</main>
       </body>
     </html>
